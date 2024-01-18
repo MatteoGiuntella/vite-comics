@@ -25,13 +25,12 @@ export default {
 <template>
     <header>
        <div class="container-bg">
-        <div class="container-general">
-            <div class="containerLogo">
-               <div class="logo">
-                   <img src="../../public/img/dc-logo.png" alt="">
-               </div>  
-            </div>
-            <div>
+            <div class="container-general">
+                 <div class="containerLogo">
+                    <div class="logo">
+                        <img src="../../public/img/dc-logo.png" alt="">
+                    </div>  
+                </div>
                 <nav class="navbarHeader">
                    <ul class="navbarItem">
                     <li  v-for="(elem, index) in item">
@@ -41,39 +40,48 @@ export default {
                 </nav>
             </div>
         </div>
-       </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-    width: 1000px;
     .container-bg{
         width: 100%;
         background-color: white;
+
         .container-general {
             height: 100px;
             width: 70%;
             display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            margin-left: 200px;
+            justify-content: flex-end;
+            margin: auto;
             .containerLogo{
-                width: 30%;
+                width: 50%;
                 height: 100%;
                 .logo{
-                    width: 100%;
+                    width: 50%;
                     height: 100%;
                 }
             }
             .navbarHeader{
-                width: 50%;
+                width: 100%;
                 height: 100%;
                 .navbarItem{
                     display: flex;
                     justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
                     flex-wrap: nowrap;
+                    height: 100%;
+                    li{
+                        font-weight: bold;
+                        height: 100%;
+                        line-height: 70px;
+                        &:nth-child(2){
+                            border-bottom: 1px solid blue;
+                            color: blue;
+                        }
+                    }
                 }
             }
 
