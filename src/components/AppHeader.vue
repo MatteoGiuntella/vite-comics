@@ -44,17 +44,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/mixins.scss' as *;
 header {
     .container-bg{
         width: 100%;
         background-color: white;
 
         .container-general {
-            height: 100px;
-            width: 70%;
-            display: flex;
-            justify-content: flex-end;
-            margin: auto;
+            @include containerGeneral;
             .containerLogo{
                 width: 50%;
                 height: 100%;
@@ -78,7 +75,7 @@ header {
                         height: 100%;
                         line-height: 70px;
                         &:nth-child(2){
-                            border-bottom: 1px solid blue;
+                            border-bottom: 5px solid blue;
                             color: blue;
                         }
                     }
