@@ -13,6 +13,7 @@ export default {
 
 <template>
     <footer>
+        
         <div class="container-bg-footer">
             <div class="container-footer">
                 <div>

@@ -131,7 +131,7 @@ export default {
 
                 </div>
                 <div class="container-bg-logo">
-                    <img src="../../public/img/dc-logo-bg.png" alt="">
+                    
                 </div>
             </div>
        </div>
@@ -191,19 +191,27 @@ main{
         width: 100%;
         .container-general{
             width: 70%;
+            height: 100%;
             margin: auto;
             display: flex;
             justify-content: space-between;
+            position: relative;
             .container-list{
                 display: flex;
                 width: 30%;
-                color: white;
-                position: relative;
-                .container-bg-logo{
-                        position: absolute;
-                    }
+                color: white;          
+            }            
+            .container-bg-logo{
+                height: 100%;
+                width: 40%;
+                background-image: url("../../public/img/dc-logo-bg.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                img{
+                    height: 150%;
                 }
-            
+            }
         }
     }
 }

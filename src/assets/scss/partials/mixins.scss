@@ -6,7 +6,7 @@
             margin: auto;
 }
 @mixin containerGeneralNoFlex{
-            height: 100px;
+            min-height: 100px;
             width: 70%;
             margin: auto;
             display: flex;
