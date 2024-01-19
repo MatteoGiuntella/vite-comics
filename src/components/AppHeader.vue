@@ -49,7 +49,6 @@ header {
     .container-bg{
         width: 100%;
         background-color: white;
-
         .container-general {
             @include containerGeneral;
             .containerLogo{
@@ -64,12 +63,7 @@ header {
                 width: 100%;
                 height: 100%;
                 .navbarItem{
-                    display: flex;
-                    justify-content: center;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: nowrap;
-                    height: 100%;
+                    @include item;
                     li{
                         font-weight: bold;
                         height: 100%;

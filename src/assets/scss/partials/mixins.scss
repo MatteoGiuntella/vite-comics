@@ -5,3 +5,30 @@
             justify-content: flex-end;
             margin: auto;
 }
+@mixin containerGeneralNoFlex{
+            height: 100px;
+            width: 70%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+}
+@mixin containerGeneralFlexCard{
+        height: 100px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+@mixin item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 100%;
+}
+@mixin footerContainer{
+    height: 100px;
+    background-color: #303030;
+}
