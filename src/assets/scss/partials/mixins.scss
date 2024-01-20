@@ -1,5 +1,5 @@
 @mixin containerGeneral{
-            height: 100px;
+            min-height: 100px;
             width: 70%;
             display: flex;
             justify-content: flex-end;
@@ -31,4 +31,11 @@
 @mixin footerContainer{
     height: 100px;
     background-color: #303030;
+}
+@mixin buttonblu{
+        padding: 10px;
+        background-color: #0282F9;
+        color: white;
+        font-weight: bold;
+        border: 1px solid #0282F9;
 }
